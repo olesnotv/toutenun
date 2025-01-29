@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
