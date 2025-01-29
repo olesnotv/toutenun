@@ -7,4 +7,9 @@ L'application regroupera donc :
   - Un site internet
   - Une fonction visio-conférence
   - Une fonction agenda
-  - Une fonction ...
+  - Une fonction réservation en ligne
+  - Une fonction système de filiation
+  - Une fonction système de paiement simple
+  - Une fonction blog
+
+A terme l'objectif sera de rendre ce projet le plus simple d'utilisation possible nottament graçe à l'ia et aux technologies modernes.
