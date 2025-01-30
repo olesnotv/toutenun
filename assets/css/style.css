@@ -1,9 +1,69 @@
-@font-face {
-    font-family: 'Raleway';
-    src: url(../fonts/Raleway-SemiBold.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100vw;
+    height: 50vh;
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+}
+
+nav, p {
+    font-family: Poppins;
+}
+
+.navbar {
+    position: absolute;
+    padding: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    align-items: center;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 20px
+}
+
+.img-wcm {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    display: flex;
+    margin: 15px auto;
+    height: 75%;
+    width: 25%;
+    background-image: url(../img/img-wcm.jpg);
+    background-size: cover;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1500px) {
+    .img-wcm {
+        display: none;
+    }
 }
