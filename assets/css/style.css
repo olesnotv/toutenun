@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
 
 * {
     margin: 0;
@@ -7,11 +10,25 @@
     text-decoration: none;
 }
 
+body {
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;    
+}
+
 header {
     width: 100vw;
-    height: 50vh;
-    background-image: url(../img/bg2.jpg);
-    background-size: cover;
+    height: 15vh;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    height: 60px;
+    width: 120px;
+    border: none;
+    background: #000000cf;
+    color: white;
+    font-size: 1rem;
 }
 
 nav, p {
@@ -19,8 +36,7 @@ nav, p {
 }
 
 .navbar {
-    position: absolute;
-    padding: 50px;
+    padding: 25px;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -33,12 +49,13 @@ nav, p {
 }
 
 .navbar .logo {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 .navbar .nav-links {
     align-items: center;
+    font-size: 1.2rem;
 }
 
 .navbar .nav-links ul {
@@ -49,21 +66,120 @@ nav, p {
     margin: 0 20px
 }
 
-.img-wcm {
-    position: absolute;
-    top: 25%;
-    left: 5%;
-    display: flex;
-    margin: 15px auto;
-    height: 75%;
-    width: 25%;
-    background-image: url(../img/img-wcm.jpg);
-    background-size: cover;
-    border-radius: 5px;
+.wcm {
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: 75vh;
+    grid-template-areas:
+    "img oth";
 }
 
-@media screen and (max-width: 1500px) {
-    .img-wcm {
-        display: none;
-    }
+.wcm-img {
+    margin: 0 auto;
+    grid-area: img;
+    width: 80%;
+    border-radius: 15px;
+    background-image: url(../img/img-wcm.jpg);
+    background-size: cover;
+}
+
+.wcm-oth {
+    margin: 0 auto;
+    grid-area: oth;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 65% 15%;
+    grid-template-areas:
+    "txt"
+    "pic"
+    "btn";
+    width: 80%;
+}
+
+.wcm-txt {
+    margin: auto auto;
+    height: 70%;
+    width: 80%;
+    grid-area: txt;
+}
+
+.wcm-txt h1 {
+    font-family: Poppins;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.wcm-pic {
+    margin: auto auto;
+    height: 100%;
+    width: 100%;
+    grid-area: pic;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "pic1 pic2 pic3";
+}
+
+.pic {
+    margin: 0 auto;
+    height: 100%;
+    width: 90%;
+    border-radius: 10px;
+    background: #000000cf;
+}
+
+.pic-img {
+    margin: 25px auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-size: cover;
+}
+
+.pic-txt {
+    margin: 0 auto;
+    padding: 5px;
+    font-family: Poppins;
+    color: white;
+}
+
+.pic-txt h2, .pic-txt h3 {
+    text-align: center;
+}
+
+.pic-txt h2 {
+    font-size: 2rem;
+}
+
+.pic-txt h3 {
+    font-size: 1.3rem;
+}
+
+.pic-txt p {
+    padding: 10px;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.wcm-btn {
+    grid-area: btn;
+}
+
+.wcm-btn {
+    margin: 30px auto;
+}
+
+#pic1 {
+    background-image: url(../img/face1.jpg);
+}
+
+#pic2 {
+    background-image: url(../img/face2.jpg);
+}
+
+#pic3 {
+    background-image: url(../img/face3.jpg);
 }
