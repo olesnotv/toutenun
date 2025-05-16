@@ -20,6 +20,12 @@ header {
     height: 15vh;
 }
 
+footer {
+    height: 25vh;
+    width: 100vw;
+    background: white;
+}
+
 button {
     padding: 5px;
     border-radius: 5px;
@@ -170,6 +176,10 @@ nav, p {
 
 .wcm-btn {
     margin: 30px auto;
+}
+
+.ft {
+    background: white;
 }
 
 #pic1 {
